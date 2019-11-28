@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8">
+	<link href="../style.css" rel="stylesheet" />
+	<title>FG Games</title>
+	<link rel="shortcut icon" href="../imagens/games.png"/>
+</head>
+<body>
+
+	<div class="flex-container">
+		<header>
+			<img id="layout" src="../imagens/gms.png" />
+		</header>
+
+		<ul id="sub">
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn"><a href="../index.html" class="active"><img id="m1" src="../imagens/me.png" title="Inicio"/></a></a>
+				<div class="dropdown-content">
+					<a id="C" href="index-cadastro.html" title="Cadastro">Cadastro</a></a>
+					<a id="S" href="index-suporte.html" title="Suporte">Suporte</a></a>
+				</div>
+			</li>
+			<li id="ca1"><a class="active" href="#about"><img id="c1" src="../imagens/carrinho.png" title="Suas Compras"/></li></a>
+		</ul>
+		<div id="after_submit"></div>
+			<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+				<div class="row">
+					<label class="required" for="name">Nome:</label><br />
+						<input id="name" class="input" name="name" type="text" value=""  /><br />
+							<span id="name_validation" class="error_message"></span>
+				</div>
+				<div class="row">
+					<label class="required" for="email">E-mail:</label><br />
+						<input id="email" class="input" name="email" type="text" value=""  /><br />
+							<span id="email_validation" class="error_message"></span>
+				</div>
+				<div class="row">
+					<label class="required" for="message">Menssage:</label><br />
+						<textarea id="message" class="input" name="message" rows="7" ></textarea><br />
+							<span id="message_validation" class="error_message"></span>
+				</div>
+			
+				<input id="submit_button" type="reset" type="button" onclick="alert('Mensagem enviada.')" type="submit" value="Enviar" />
+			</form>
+		<footer>
+			<p>Endereço: Rua 13 de Maio, 590-Centro-São Miguel (RN)-CEP: 59920-000</p> E-mail: atendimmento@fgames.com.br
+			<p>IFRN-Copyright&copy;2010-2018.</p><h3>Felipe Gabriel Queiroz Rego</h3>
+		</footer>
+	</div>
+</body>
+</html>
